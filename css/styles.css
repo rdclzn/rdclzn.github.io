@@ -1,0 +1,183 @@
+/*--Palette #1 Soft
+#0F9FFF - Carolina Blue
+#FB7474 - Light Coral
+#FFB370 - Rajah
+#043AA4 - Egyptian Blue
+#86E4A5 - Medium Aquamarine
+#70DBD8 - Medium Turquoise
+#191308 - Black Chocolate
+#3E9359 - Sea Green
+#B27092 - Pearly Purple
+#FFFAF0 - Floral White
+*/
+
+/*  Global Styles
+---------------------------------*/
+body {
+  color: #191308;
+  background-color: #86E4A5;
+  background-image: url(https://rule34.paheal.net/themes/rule34v2/bg.png);
+  font-family: 'Roboto Slab', serif;
+}
+
+img {
+  width: 300px;
+}
+
+body a:link{
+  color: #043AA4;
+  font-weight: 700;
+}
+body a:visited{
+  color: #B27092;
+  font-weight: 700;
+}
+body a:hover {
+  background: gray;
+  color: #043AA4;
+}
+body a:active {
+  color: white;
+}
+
+body main {
+  position: absolute;
+  margin: 0;
+  left: 20%;
+  padding-left: 20px;
+  width: 70%;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+h3 {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+}
+
+
+.sidebar {
+    height:100%;
+    width:20%;
+    background-color:#3E9359;
+    border-right: 2px solid #191308;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+    overflow:auto
+  }
+
+  .sidebar li {
+    margin-bottom: 0px;
+    list-style-type: none;
+  }
+
+  .bar-block .bar-item {
+    width:100%;
+    display:block;
+    padding-left: 0%;
+    white-space:normal;
+    outline:0
+  }
+
+  .button {
+    background-color: #3E9359;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 95%;
+
+}
+
+  li .button {
+    transition-duration: 0.4s;
+    font-weight: bolder;
+    border-bottom: 2px solid #191308;
+    width: 100%;
+    color: #FFFAF0;
+    /*border-radius: 15px;*/
+  }
+
+  li .button:hover {
+    background-color: #FFFAF0;
+    color: Black;
+  }
+
+  .wrap {
+    font-size: 0px;
+  }
+
+  .content-wrap {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+/*  Profile
+---------------------------------*/
+
+header {
+  background-color: #0F9FFF;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0px;
+}
+
+/*  Projects
+---------------------------------*/
+
+.projects {
+  background-color: #70DBD8;
+  padding: 5px 15px;
+  left: 0px;
+}
+
+.projects .button {
+  background: #043AA4;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  width: 40%;
+}
+
+.projects .button:hover{
+  background:rgba(4, 58, 164,80%);
+}
+
+.projects .button:active{
+  background:rgba(4, 58, 164,20%);
+  color:rgba(90%,90%,90%,100%);
+}
+
+
+
+/*  Work Experience
+---------------------------------*/
+
+
+/*  Info
+---------------------------------*/
+footer  {
+  background: #FFB370;
+  margin-left: -2vw;
+  padding: 1px 2.1vw;
+  width: 75.34vw;
+}
+
+.copyright {
+
+}
