@@ -22,8 +22,8 @@
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
         <header>
           <div class="content-wrap">
-            <h1>Red's personal page</h1>
-            <h2>Job title or tagline</h2>
+            <h1>Red's personal archive</h1>
+            <em><h2><br>Aerospace Engineering Student, Programmer,<br>Web-developer</h2></em>
 
             <p><em>Add your profile copy here.</em> Add more paragraphs or links as needed. Here is some dummy text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.</p>
             <p>Add another paragraph if needed.</p>
@@ -35,15 +35,43 @@
       <section class="projects">
         <h2>Featured Projects</h2>
         <p>View selected projects below. More information can be found at <a href="http://christinatruong.com">christinatruong.com</a>.</p>
-
         <!-- Copy the whole <section> block to add more projects. -->
-        <section>
+        <section class="project-item">
+          <picture>
+            <source media="(max-width: 499px)" srcset="imgs/thumbnail-4_160.jpg">
+            <source media="(min-width: 500px)" srcset="imgs/thumbnail-4_320.jpg,
+                    imgs/thumbnail-4.jpg 2x,
+                    imgs/thumbnail-4_1260.jpg 4x">
+            <img src="imgs/thumbnail-4.jpg"
+                 alt="small image of warplane">
+          </picture>
           <h3>Project Name</h3>
-          <img srcset="imgs/thumbnail-4_320.jpg 0.5x,
-                       imgs/thumbnail-4.jpg,
-                       imgs/thumbnail-4_1260.jpg 2x"
-               src="imgs/thumbnail-4.jpg"
-               alt="small image of warplane">
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+            Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo.
+            Nunc scelerisque vestibulum augue, sit amet hendrerit ante.</p> <br>
+            <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+            Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo.
+            Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
+            Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo.
+            Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
+            Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo.
+            Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
+            Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo.
+            Nunc scelerisque vestibulum augue, sit amet hendrerit ante.</p>
+          <a href="#" class="button">View project / case study</a>
+        </section>
+        <section class="project-item">
+          <picture>
+            <source media="(max-width: 499px)" srcset="imgs/thumbnail-4_160.jpg">
+            <source media="(min-width: 500px)" srcset="imgs/thumbnail-4_320.jpg,
+                    imgs/thumbnail-4.jpg 2x,
+                    imgs/thumbnail-4_1260.jpg 4x">
+            <img src="imgs/thumbnail-4.jpg"
+                 alt="small image of warplane">
+          </picture>
+          <h3>Enormous PP</h3>
           <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
           <a href="#" class="button">View project / case study</a>
         </section>
@@ -52,24 +80,65 @@
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
       <section class="work-experience">
-        <h2>Work Experience</h2>
-        <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
+          <h2>Work Experience</h2>
+          <p>See my complete work history on <a href="https://www.linkedin.com/in/christinatruong/">LinkedIn</a>.</p>
+          <div class="job-wrap">
+            <!-- Job 1 -->
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Front-end Developer &amp; Educator</h3>
+                <p>Freelance</p>
+                <p>January 2012-Present</p>
+              </div>
+              <div class="job-summary">
+                <p>Provides various front-end related services ranging from development work, speaking engagements, instructor training, workshops, and curriculum development. See more at  <a href="http://christinatruong.com">christinatruong.com</a>.</p>
+              </div>
+            </section>
 
-        <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Job title</h3>
-          <p>Company Name</p>
-          <p>Date at job</p>
-          <p>Job summary goes here. Add as many paragraphs as you need.</p>
-          <p>Optional list:</p>
-          <ul>
-            <li>Delete this list if you don't need it.</li>
-            <li>Created...</li>
-            <li>Lead...</li>
-            <li>Responsible for...</li>
-          </ul>
-        </section>
-        <!-- End of Job block. -->
+            <!-- Job 2 -->
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Director of Curriculum</h3>
+                <p>Ladies Learning Code</p>
+                <p>July 2014 - February 2016</p>
+              </div>
+              <div class="job-summary">
+                <p>Managed all curriculum for the adult programs. Created teaching materials and implemented instructor training across 20+ Canadian chapters.</p>
+                <p>Key contributions:</p>
+                <ul>
+                  <li>Overhauled the curriculum and standardized the content and delivery.
+                    <ul>
+                      <li>Created 9 new workshops focusing on HTML, CSS, JavaScript, jQuery, Wordpress and Responsive Web Design.</li>
+                      <li>Created all Hackapalooza content (2 day conference style event) consisting of 2-4 hour workshop sessions.</li>
+                      <li>Created interactive slide deck template for consistent national workshop branding.</li>
+                      <li>Developed the Digital Skills part-time program curriculum.</li>
+                    </ul>
+                  </li>
+                  <li>Provided training for all instructors focusing on creating an inclusive and engaging learning environment.</li>
+                  <li>Maintained the ladieslearningcode.com website.</li>
+                  <li>Volunteer lead instructor from 2011-2014 for Toronto workshops and several chapter launches.</li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Job 3 -->
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Lead Front-End Developer</h3>
+                <p>Field iD</p>
+                <p>March 2013 - February 2014</p>
+              </div>
+              <div class="job-summary">
+                <p>Lead the front-end development for the in-house safety inspection software.</p>
+                <p>Key contributions:</p>
+                <ul>
+                  <li>Responsible for setting code standards for the front-end development.</li>
+                  <li>Created a fully customized front-end framework, including the UI/UX design.</li>
+                  <li>Standardized the site architecture and design.</li>
+                </ul>
+              </div>
+            </section>
+          </div>
       </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
@@ -87,11 +156,29 @@
 
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
-        <h2>Let's Keep in Touch!</h2>
-
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
-          <li><a href="mailto:email@example.com">email@example.com</a></li>
+        <h2 style="font-style: italic;font-size: 2em;">Let's Keep in Touch!</h2>
+        <div class="form">
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <form action="https://formspree.io/f/mgepnbng"
+            method="POST">
+            <label>
+              <input placeholder="Email" type="email" name="_replyto">
+            </label>
+            <label>
+              <input placeholder="Your Name" type="text" name="name">
+            </label>
+            <label>
+              <input placeholder="Phone Number" type="number" name="phone">
+            </label>
+            <label>
+              <textarea placeholder="Your Message" name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <ul class="contacts-list">
+          <li class="mobile_contact"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd5pLK_cvQqLPrriqHA52cbV34K62g86HogwOeMkL904e9ulQ/viewform?usp=sf_link">Contact Form!</a></li>
           <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
           <li><a href="#" target="_blank">Twitter</a></li>
           <li><a href="#" target="_blank">LinkedIn</a></li>

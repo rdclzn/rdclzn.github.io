@@ -1,6 +1,5 @@
 /*--Palette #1 Soft
-#0F9FFF - Carolina Blue
-#FB7474 - Light Coral
+#2F204F - Russian Violet
 #FFB370 - Rajah
 #043AA4 - Egyptian Blue
 #86E4A5 - Medium Aquamarine
@@ -9,6 +8,7 @@
 #3E9359 - Sea Green
 #B27092 - Pearly Purple
 #FFFAF0 - Floral White
+#95BFA2 - Elton Blue
 */
 
 /*  Global Styles
@@ -21,7 +21,7 @@ body {
 }
 
 img {
-  width: 300px;
+  max-width: 300px;
 }
 
 body a:link{
@@ -44,17 +44,20 @@ body main {
   position: absolute;
   margin: 0;
   left: 20%;
-  padding-left: 20px;
-  width: 70%;
+  overflow: hidden;
+}
+
+main>*:not(:last-child) {
+  margin: 0 auto;
+  padding-left:20px;
+  padding-right: 20px;
+  width: 85%;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 3em;
   text-transform: uppercase;
 }
-h2 {
+h2, h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
@@ -70,10 +73,11 @@ h3 {
     background-color:#3E9359;
     border-right: 2px solid #191308;
     position: fixed;
+    float:left;
     top: 0px;
     left: 0px;
     z-index:1;
-    overflow:auto
+    overflow:auto;
   }
 
   .sidebar li {
@@ -88,19 +92,38 @@ h3 {
     white-space:normal;
     outline:0
   }
-
-  .button {
-    background-color: #3E9359;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 95%;
-
+@media screen and (min-width:600px) {
+    .button {
+      background-color: #3E9359;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      width: 95%;
+      float: left;
+      overflow: hidden;
+  }
 }
+
+@media screen and (max-width:599px) {
+    .button {
+      background-color: #3E9359;
+      border: none;
+      color: white;
+      padding: 15px 10px;
+      text-align: left;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 11px;
+      width: 95%;
+      float: left;
+      overflow: hidden;
+  }
+}
+
 
   li .button {
     transition-duration: 0.4s;
@@ -129,11 +152,12 @@ h3 {
 ---------------------------------*/
 
 header {
-  background-color: #0F9FFF;
+  background-color: #2F204F;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  color: seashell;
   left: 0px;
 }
 
@@ -163,19 +187,141 @@ header {
   color:rgba(90%,90%,90%,100%);
 }
 
+.project-item {
+  overflow: hidden;
+  border-bottom: 2px ridge #191308;
+  padding: 20px 10px;
+}
+
+
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-item img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.project-item .button {
+  clear: left;
+  margin-top: 20px;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
+.project-item p:nth-of-type(2) {
+  clear: both;
+}
+
 
 
 /*  Work Experience
 ---------------------------------*/
+.job-item {
+  background: #95BFA2; /*Elton Blue*/
+}
 
+@media screen and (min-width:600px) {
+  .job-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 20px;
+    border-top: 1px solid #191308;
+  }
+  .job-wrap {
+    border-right: 1px solid #191308;
+    border-bottom: 1px solid #191308;
+  }
+
+  .job-details {
+    border-left: 1px solid #191308;
+    border-right: 1px solid #191308;
+  }
+}
+
+.job-details {
+  background:#3E9359;
+  padding: 5px 20px;
+}
+
+.job-summary {
+  padding: 5px 10px;
+  background: inheret;
+}
+
+.job-details h3 {
+  margin-bottom: 6px;
+}
+.job-details h3 ~ p {
+  font-style: italic;
+  margin: 0;
+}
 
 /*  Info
 ---------------------------------*/
 footer  {
   background: #FFB370;
-  margin-left: -2vw;
-  padding: 1px 2.1vw;
-  width: 75.34vw;
+  padding: 1px 1%;
+  width: inheret;
+  text-align: center;
+}
+
+.contacts-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 15px 0;
+  width:30%;
+  background-color: #fca1a1;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.form button, .form textarea, .form input {
+  background-color: #dadad3;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+.form button {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form {
+  width: 85%;
+  display:grid;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+form label > * {
+  width:90%;
+  margin: 5px auto;
+}
+
+form textarea {
+  height: 65px;
+}
+
+.contacts-list a {
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .copyright {
