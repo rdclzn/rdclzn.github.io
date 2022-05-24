@@ -47,11 +47,17 @@ body main {
   overflow: hidden;
 }
 
-main>*:not(:last-child) {
+main :not(footer, .work-experience) {
   margin: 0 auto;
   padding-left:20px;
   padding-right: 20px;
   width: 85%;
+}
+
+@media screen and (max-width:500px) {
+    main {
+        width:80%;
+    }
 }
 
 h1 {
@@ -70,12 +76,13 @@ h3 {
 .sidebar {
     height:100%;
     width:20%;
+    margin: 0% 0% 0% 1px;
     background-color:#3E9359;
     border-right: 2px solid #191308;
     position: fixed;
     float:left;
     top: 0px;
-    left: 0px;
+    left: -1px;
     z-index:1;
     overflow:auto;
   }
@@ -156,18 +163,20 @@ header {
   border-radius: 20px 20px 0 0;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 25px;
+  padding-bottom: 35px;
   color: white;
   left: 0px;
 }
+
+
 
 /*  Projects
 ---------------------------------*/
 
 .projects {
   background-color: #70DBD8;
-  padding: 5px 15px;
+  padding: 25px 15px;
   left: 0px;
   border-radius: 0 0 20px 20px;
 }
@@ -224,36 +233,53 @@ header {
 
 /*  Work Experience
 ---------------------------------*/
-.job-item {
-  background: #95BFA2; /*Elton Blue*/
+
+.work-experience>* {
+    padding: 30px 0px 0px 0px;
+    width: 100%;
 }
 
-@media screen and (min-width:600px) {
+.work-experience p {
+    padding-bottom: 30px;
+}
+
+.job-item {
+  background: #95BFA2; /*Elton Blue*/
+  padding-top: 15px;
+}
+
+@media screen and (min-width:800px) {
   .job-item {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    column-gap: 20px;
+    width: 100% !important;
     border-top: 1px solid #191308;
+    padding: 0px 0px 0px 0px!important;
   }
   .job-wrap {
-    border-right: 1px solid #191308;
+    margin: 0px;
+    border-right:  1px solid #191308;
     border-bottom: 1px solid #191308;
+    padding: 0px 0px 0px 0px !important;
   }
 
   .job-details {
     border-left: 1px solid #191308;
     border-right: 1px solid #191308;
+    margin: 0px !important;
   }
 }
 
 .job-details {
   background:#3E9359;
-  padding: 5px 20px;
+  padding: 15px 10px 20px 10px;
 }
 
 .job-summary {
-  padding: 5px 10px;
+  padding: 20px 10px 20px 10px;
   background: inheret;
+  margin: auto !important;
+  width: 100% !important;
 }
 
 .job-details h3 {
@@ -264,7 +290,7 @@ header {
   margin: 0;
 }
 
-/*  Work Experience
+/* Education
 ---------------------------------*/
 
  section.education {
@@ -274,6 +300,7 @@ header {
   padding-bottom: 5px;
   margin-top: 15px;
   margin-bottom: 15px;
+  width: inheret;
 }
 
 /*  Info
