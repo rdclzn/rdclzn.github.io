@@ -246,8 +246,27 @@ header {
 
 .work-experience :is(.summary){
     background-color: #3E9359;
-    margin-left: 7.5%;
-    width: 81.25%;
+    width: 84.95%;
+    padding: 10px 0px 0px 0px;
+    
+    margin-left: 7.45%;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+@media screen and (max-width:800px) {
+    .work-experience :is(.summary){
+    width: 100%;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+}
+
+.work-experience :is(.summary) h2 , p{
+    padding: 10px 15px 15px 15px !important;
 }
 
 .job-item {
