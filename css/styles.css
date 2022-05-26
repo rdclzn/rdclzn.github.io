@@ -177,6 +177,7 @@ header {
 .projects {
   background-color: #70DBD8;
   padding: 25px 15px;
+  margin-bottom: 2cm !important;
   left: 0px;
   border-radius: 0 0 20px 20px;
 }
@@ -235,12 +236,18 @@ header {
 ---------------------------------*/
 
 .work-experience>* {
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0px 20px 0px;
     width: 100%;
 }
 
-.work-experience p {
+.work-experience {
     padding-bottom: 30px;
+}
+
+.work-experience :is(.summary){
+    background-color: #3E9359;
+    margin-left: 7.5%;
+    width: 81.25%;
 }
 
 .job-item {
@@ -293,7 +300,7 @@ header {
 /* Education
 ---------------------------------*/
 
- section.education {
+.education section{
   background-color: #86E4A5;
   border-radius: 20px;
   padding-top: 5px;
@@ -301,6 +308,22 @@ header {
   margin-top: 15px;
   margin-bottom: 15px;
   width: inheret;
+}
+
+.education section p{
+    padding: 5px;
+}
+
+.education h2{
+    background-color: #86E4A5;
+    border-radius: 20px;
+    padding: 20px;
+    margin: inheret;
+}
+
+.education {
+    margin-bottom: 2cm !important;
+    margin-top: 2cm !important;
 }
 
 /*  Info
