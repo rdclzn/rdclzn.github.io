@@ -45,6 +45,7 @@ body main {
   margin: 0;
   left: 20%;
   overflow: hidden;
+  transition: 0.2s;
 }
 
 main :not(footer, .work-experience) {
@@ -52,6 +53,7 @@ main :not(footer, .work-experience) {
   padding-left:20px;
   padding-right: 20px;
   width: 85%;
+  transition: 0.2s;
 }
 
 @media screen and (max-width:500px) {
@@ -74,6 +76,7 @@ h3 {
 
 
 .sidebar {
+    transition: 0.2s;
     height:100%;
     width:20%;
     margin: 0% 0% 0% 1px;
@@ -94,11 +97,35 @@ h3 {
 
   .bar-block .bar-item {
     width:100%;
-    display:block;
+    display: inline-block;
     padding-left: 0%;
     white-space:normal;
-    outline:0
+    outline:0;
+    transition: 0.2s;
   }
+
+  .sidebar-menu {
+    transition: 0.2s;
+    background-color: #3E9359;
+    position: fixed;
+    border-radius: 10px;
+    display: inline;
+    color: white;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 0.1%;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .sidebar-menu:hover {
+    background-color: #8fc29f;
+  }
+
+  .sidebar-menu:checked {
+    background-color: white;
+  }
+
 @media screen and (min-width:600px) {
     .button {
       background-color: #3E9359;
@@ -226,11 +253,9 @@ header {
   margin-top: 0;
 }
 
-.project-item p:nth-of-type(2) {
+.project-item p:nth-of-type(3) {
   clear: both;
 }
-
-
 
 /*  Work Experience
 ---------------------------------*/
@@ -248,7 +273,7 @@ header {
     background-color: #3E9359;
     width: 84.95%;
     padding: 10px 0px 0px 0px;
-    
+    border-radius: 20px 20px 0px 0px;
     margin-left: 7.45%;
     border-top: 1px solid;
     border-left: 1px solid;
@@ -258,6 +283,7 @@ header {
 @media screen and (max-width:800px) {
     .work-experience :is(.summary){
     width: 100%;
+	border-radius: 0px 0px 0px 0px;
     border-top: 1px solid;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -282,8 +308,10 @@ header {
     border-top: 1px solid #191308;
     padding: 0px 0px 0px 0px!important;
   }
+
   .job-wrap {
     margin: 0px;
+	border-radius: 0px 0px 20px 20px;
     border-right:  1px solid #191308;
     border-bottom: 1px solid #191308;
     padding: 0px 0px 0px 0px !important;
@@ -293,6 +321,14 @@ header {
     border-left: 1px solid #191308;
     border-right: 1px solid #191308;
     margin: 0px !important;
+  }
+
+  .job-item:last-child .job-details{
+	border-radius: 0px 0px 0px 20px;
+  }
+
+  .job-item:last-child{
+    border-radius: 0px 0px 20px 20px;
   }
 }
 
@@ -356,7 +392,7 @@ footer  {
 
 .contacts-list {
   list-style-type: none;
-  padding: 0;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -414,5 +450,6 @@ form textarea {
 }
 
 .copyright {
-
+  width: 66px !important;
+  height: 24px;
 }

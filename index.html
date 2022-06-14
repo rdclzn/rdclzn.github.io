@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<script type="text/javascript" src="js/script.js"></script>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -10,16 +12,18 @@
   </head>
 
   <body>
-    <div class="sidebar bar-block">
+    <div id="menuSidebar" class="sidebar bar-block">
       <ul class="bar-block bar-item" style="margin-top:0;">
-        <li><button class="button" onclick="window.location.href='#header';">Intro</button></li></a>
-        <li><button class="button" onclick="window.location.href='#projects';">Projects</button></li></a>
-        <li><button class="button" onclick="window.location.href='#work';">Work Experience</button></li></a>
-        <li><button class="button" onclick="window.location.href='#education';">Education</button></li></a>
-        <li><button class="button" onclick="window.location.href='#footer';">Contact</button></li></a>
+        <li><button class="button" onclick="scrollToElement('header')">Intro</button></li></a>
+        <li><button class="button" onclick="scrollToElement('projects')">Projects</button></li></a>
+        <li><button class="button" onclick="scrollToElement('work')">Work Experience</button></li></a>
+        <li><button class="button" onclick="scrollToElement('education')">Education</button></li></a>
+        <li><button class="button" onclick="scrollToElement('footer')">Contact</button></li></a>
       </ul>
     </div>
-    <main>
+    <div id="sidebarToggle" class="sidebar-menu" onclick="toggleSidebar()">☰</div>
+
+    <main id="main">
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header id="header">
           <div class="content-wrap">
@@ -76,7 +80,7 @@
         </section>
         <!-- End of Project block. -->
       </section>
-      
+
       <section> </section>
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
       <section class="work-experience" id="work">
@@ -93,9 +97,9 @@
                 <p>June 2018 - December 2018</p>
               </div>
               <div class="job-summary">
-                <p>Scholarship at the PASARP project, financed by EMBRAER and FAPEMIG, dealing 
+                <p>Scholarship at the PASARP project, financed by EMBRAER and FAPEMIG, dealing
                 as a consulting intern in the field of aeronautic engineering and conducting research
-                in control schemes for aircraft.</p> 
+                in control schemes for aircraft.</p>
                 <p>The aim of the project was automatic verification
                 of aircraft system software. The scholarship was paid through the sponsor financing.</p>
               </div>
@@ -109,11 +113,11 @@
                 <p>June 2021 - June 2022</p>
               </div>
               <div class="job-summary">
-                <p>Hired as a Software Development intern, making use of C++ in the Qt Framework and the OpenCV library 
+                <p>Hired as a Software Development intern, making use of C++ in the Qt Framework and the OpenCV library
                 for the development of industrial inspection applications to be deployed for clients of the company.</p>
                 <p>Key tasks:</p>
                 <ul>
-                  <li>Made use of OpenCV and C++ to implement a dimmensional inspection functionality for an automotive 
+                  <li>Made use of OpenCV and C++ to implement a dimmensional inspection functionality for an automotive
                   spring manufacturer.</li>
                   <li>Implementation of various UI elements, and functionalities for the company's main inspection plataform,
                   Inspecta, utilizing C++ on the Qt Framework.</li>
@@ -137,12 +141,12 @@
                 <p>Key contributions:</p>
                 <ul>
                   <li>Responsible for setting the software development pipeline and implementing an Agile system.</li>
-                  <li>Developing and coordinating the development of computer vision routines in OpenCV for the 
+                  <li>Developing and coordinating the development of computer vision routines in OpenCV for the
                   detection of objectives in the AUVSI SUAS competition.</li>
                   <li>Integrating the needs of the AVANT team with the development schedule of the Software Team.</li>
                   <li>Training and coordinating with the multiple sections of the Software and Electronics Team for
                   the implementation of the auto-pilot-flight-computer-actuators system that goes within the UAVs.</li>
-                  <li>General planning and administration of opportunities for collaboration and application of the 
+                  <li>General planning and administration of opportunities for collaboration and application of the
                   team's resources with various external entities</li>
                 </ul>
               </div>
@@ -158,18 +162,18 @@
         <section>
           <h3>Universidade Federal de Minas Gerais - Belo Horizonte, Brazil</h3>
           <p>Bachelor's in Aerospace Engineering, 2022</p>
-          <p>Participated in a couple of initiatives: AeroJr. student company, AVANT -UFMG student team, and 
+          <p>Participated in a couple of initiatives: AeroJr. student company, AVANT -UFMG student team, and
           Uai Sô! Fly Aerodesign Team, the latter as a fabrication assistant. Utilized my time to get acquainted
           with research procedures, received scholarship as a research assistant.
         </section>
-        
+
         <section>
           <h3>Tohoku University - Sendai, Japan</h3>
-          <p>Exchange Program with Scholarship(Ciência sem Fronteiras), 2014 - 2015</p>
+          <p>Exchange Program with Scholarship (Ciência sem Fronteiras), 2014 - 2015</p>
           <p>Besides lectures, conducted research at the Computer Fluid Dynamics laboratory under Prof. Sawada
           involving the application of Newton's model of fluid-dynamics applied to unstructed meshes
           for the high-hypersonic regime. Short-term (two-weeks) summer internships at Mitsubishi Co.,
-          IHI Heavy Industries, and Mitsui & Co; conducting both engineering activities in the field of 
+          IHI Heavy Industries, and Mitsui & Co; conducting both engineering activities in the field of
           rotating machines at IHI and general corporate familiarization at Mitsubishi and Mitsui.</p>
         </section>
         <!-- End of School block. -->
@@ -205,7 +209,7 @@
           <li><a href="#" target="_blank">LinkedIn</a></li>
           <li><a href="#" target="_blank">Facebook</a></li>
         </ul>
-        <small class="copyright">Copyright Information | Add copyright info here </small>
+        <small class="copyright"><img class="copyright" src="imgs/CC BY-SA.png" alt="CC BY-SA" width="88" height="31" /> CreativeCommons Attribution-ShareAlike</small>
       </footer>
     </main>
   </body>
